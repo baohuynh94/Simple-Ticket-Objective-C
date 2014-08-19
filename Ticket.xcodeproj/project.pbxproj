@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A73647E019A3AA39004C8F87 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A73647DF19A3AA39004C8F87 /* BButton.m */; };
+		A73647E319A3AB6C004C8F87 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A73647E219A3AB6C004C8F87 /* UIColor+BButton.m */; };
+		A73647E619A3AB94004C8F87 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = A73647E519A3AB94004C8F87 /* NSString+FontAwesome.m */; };
+		A73647E819A3B049004C8F87 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A73647E719A3B049004C8F87 /* background.jpg */; };
+		A7E3A93E19A3508A00A0BEA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A93D19A3508A00A0BEA9 /* Foundation.framework */; };
+		A7E3A94019A3508A00A0BEA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A93F19A3508A00A0BEA9 /* CoreGraphics.framework */; };
+		A7E3A94219A3508A00A0BEA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A94119A3508A00A0BEA9 /* UIKit.framework */; };
+		A7E3A94819A3508A00A0BEA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7E3A94619A3508A00A0BEA9 /* InfoPlist.strings */; };
+		A7E3A94A19A3508A00A0BEA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A94919A3508A00A0BEA9 /* main.m */; };
+		A7E3A94E19A3508A00A0BEA9 /* KQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A94D19A3508A00A0BEA9 /* KQAppDelegate.m */; };
+		A7E3A95119A3508A00A0BEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E3A94F19A3508A00A0BEA9 /* Main.storyboard */; };
+		A7E3A95419A3508A00A0BEA9 /* KQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A95319A3508A00A0BEA9 /* KQViewController.m */; };
+		A7E3A95619A3508A00A0BEA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E3A95519A3508A00A0BEA9 /* Images.xcassets */; };
+		A7E3A95D19A3508A00A0BEA9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A95C19A3508A00A0BEA9 /* XCTest.framework */; };
+		A7E3A95E19A3508A00A0BEA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A93D19A3508A00A0BEA9 /* Foundation.framework */; };
+		A7E3A95F19A3508A00A0BEA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A94119A3508A00A0BEA9 /* UIKit.framework */; };
+		A7E3A96719A3508A00A0BEA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7E3A96519A3508A00A0BEA9 /* InfoPlist.strings */; };
+		A7E3A96919A3508A00A0BEA9 /* TicketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A96819A3508A00A0BEA9 /* TicketTests.m */; };
+		A7E3A97519A350B600A0BEA9 /* KQFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A97419A350B600A0BEA9 /* KQFileManager.m */; };
+		A7E3A97719A3553300A0BEA9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A97619A3553300A0BEA9 /* libsqlite3.dylib */; };
+		A7E3A97A19A3557900A0BEA9 /* KQDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A97919A3557900A0BEA9 /* KQDBManager.m */; };
+		A7E3A97C19A371C600A0BEA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A97B19A371C600A0BEA9 /* QuartzCore.framework */; };
+		A7E3A97F19A3737A00A0BEA9 /* KQIncommingFilmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A97E19A3737A00A0BEA9 /* KQIncommingFilmViewController.m */; };
+		A7E3A98519A3765100A0BEA9 /* fav.png in Resources */ = {isa = PBXBuildFile; fileRef = A7E3A98219A3765100A0BEA9 /* fav.png */; };
+		A7E3A98619A3765100A0BEA9 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = A7E3A98319A3765100A0BEA9 /* new.png */; };
+		A7E3A98719A3765100A0BEA9 /* incomming.png in Resources */ = {isa = PBXBuildFile; fileRef = A7E3A98419A3765100A0BEA9 /* incomming.png */; };
+		A7E3A98A19A378A800A0BEA9 /* KQAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A98919A378A800A0BEA9 /* KQAboutViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7E3A96019A3508A00A0BEA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7E3A93219A3508A00A0BEA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7E3A93919A3508A00A0BEA9;
+			remoteInfo = Ticket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A73647DE19A3AA39004C8F87 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
+		A73647DF19A3AA39004C8F87 /* BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BButton.m; sourceTree = "<group>"; };
+		A73647E119A3AB6C004C8F87 /* UIColor+BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BButton.h"; sourceTree = "<group>"; };
+		A73647E219A3AB6C004C8F87 /* UIColor+BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BButton.m"; sourceTree = "<group>"; };
+		A73647E419A3AB94004C8F87 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		A73647E519A3AB94004C8F87 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		A73647E719A3B049004C8F87 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		A7E3A93A19A3508A00A0BEA9 /* Ticket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E3A93D19A3508A00A0BEA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A7E3A93F19A3508A00A0BEA9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A7E3A94119A3508A00A0BEA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A7E3A94519A3508A00A0BEA9 /* Ticket-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ticket-Info.plist"; sourceTree = "<group>"; };
+		A7E3A94719A3508A00A0BEA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A7E3A94919A3508A00A0BEA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7E3A94B19A3508A00A0BEA9 /* Ticket-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ticket-Prefix.pch"; sourceTree = "<group>"; };
+		A7E3A94C19A3508A00A0BEA9 /* KQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KQAppDelegate.h; sourceTree = "<group>"; };
+		A7E3A94D19A3508A00A0BEA9 /* KQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KQAppDelegate.m; sourceTree = "<group>"; };
+		A7E3A95019A3508A00A0BEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7E3A95219A3508A00A0BEA9 /* KQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KQViewController.h; sourceTree = "<group>"; };
+		A7E3A95319A3508A00A0BEA9 /* KQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KQViewController.m; sourceTree = "<group>"; };
+		A7E3A95519A3508A00A0BEA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A7E3A95B19A3508A00A0BEA9 /* TicketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E3A95C19A3508A00A0BEA9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A7E3A96419A3508A00A0BEA9 /* TicketTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicketTests-Info.plist"; sourceTree = "<group>"; };
+		A7E3A96619A3508A00A0BEA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A7E3A96819A3508A00A0BEA9 /* TicketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketTests.m; sourceTree = "<group>"; };
+		A7E3A97319A350B600A0BEA9 /* KQFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQFileManager.h; sourceTree = "<group>"; };
+		A7E3A97419A350B600A0BEA9 /* KQFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQFileManager.m; sourceTree = "<group>"; };
+		A7E3A97619A3553300A0BEA9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A7E3A97819A3557900A0BEA9 /* KQDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQDBManager.h; sourceTree = "<group>"; };
+		A7E3A97919A3557900A0BEA9 /* KQDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQDBManager.m; sourceTree = "<group>"; };
+		A7E3A97B19A371C600A0BEA9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A7E3A97D19A3737A00A0BEA9 /* KQIncommingFilmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQIncommingFilmViewController.h; sourceTree = "<group>"; };
+		A7E3A97E19A3737A00A0BEA9 /* KQIncommingFilmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQIncommingFilmViewController.m; sourceTree = "<group>"; };
+		A7E3A98219A3765100A0BEA9 /* fav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fav.png; sourceTree = "<group>"; };
+		A7E3A98319A3765100A0BEA9 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
+		A7E3A98419A3765100A0BEA9 /* incomming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incomming.png; sourceTree = "<group>"; };
+		A7E3A98819A378A800A0BEA9 /* KQAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQAboutViewController.h; sourceTree = "<group>"; };
+		A7E3A98919A378A800A0BEA9 /* KQAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQAboutViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7E3A93719A3508A00A0BEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E3A97C19A371C600A0BEA9 /* QuartzCore.framework in Frameworks */,
+				A7E3A97719A3553300A0BEA9 /* libsqlite3.dylib in Frameworks */,
+				A7E3A94019A3508A00A0BEA9 /* CoreGraphics.framework in Frameworks */,
+				A7E3A94219A3508A00A0BEA9 /* UIKit.framework in Frameworks */,
+				A7E3A93E19A3508A00A0BEA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E3A95819A3508A00A0BEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E3A95D19A3508A00A0BEA9 /* XCTest.framework in Frameworks */,
+				A7E3A95F19A3508A00A0BEA9 /* UIKit.framework in Frameworks */,
+				A7E3A95E19A3508A00A0BEA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7E3A93119A3508A00A0BEA9 = {
+			isa = PBXGroup;
+			children = (
+				A7E3A94319A3508A00A0BEA9 /* Ticket */,
+				A7E3A96219A3508A00A0BEA9 /* TicketTests */,
+				A7E3A93C19A3508A00A0BEA9 /* Frameworks */,
+				A7E3A93B19A3508A00A0BEA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7E3A93B19A3508A00A0BEA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3A93A19A3508A00A0BEA9 /* Ticket.app */,
+				A7E3A95B19A3508A00A0BEA9 /* TicketTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7E3A93C19A3508A00A0BEA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3A97B19A371C600A0BEA9 /* QuartzCore.framework */,
+				A7E3A97619A3553300A0BEA9 /* libsqlite3.dylib */,
+				A7E3A93D19A3508A00A0BEA9 /* Foundation.framework */,
+				A7E3A93F19A3508A00A0BEA9 /* CoreGraphics.framework */,
+				A7E3A94119A3508A00A0BEA9 /* UIKit.framework */,
+				A7E3A95C19A3508A00A0BEA9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7E3A94319A3508A00A0BEA9 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3A98019A3763600A0BEA9 /* resource */,
+				A7E3A94C19A3508A00A0BEA9 /* KQAppDelegate.h */,
+				A7E3A94D19A3508A00A0BEA9 /* KQAppDelegate.m */,
+				A7E3A94F19A3508A00A0BEA9 /* Main.storyboard */,
+				A7E3A95219A3508A00A0BEA9 /* KQViewController.h */,
+				A7E3A95319A3508A00A0BEA9 /* KQViewController.m */,
+				A7E3A98819A378A800A0BEA9 /* KQAboutViewController.h */,
+				A7E3A98919A378A800A0BEA9 /* KQAboutViewController.m */,
+				A7E3A97D19A3737A00A0BEA9 /* KQIncommingFilmViewController.h */,
+				A7E3A97E19A3737A00A0BEA9 /* KQIncommingFilmViewController.m */,
+				A7E3A97219A350A900A0BEA9 /* Classes */,
+				A7E3A95519A3508A00A0BEA9 /* Images.xcassets */,
+				A7E3A94419A3508A00A0BEA9 /* Supporting Files */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		A7E3A94419A3508A00A0BEA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A73647E419A3AB94004C8F87 /* NSString+FontAwesome.h */,
+				A73647E519A3AB94004C8F87 /* NSString+FontAwesome.m */,
+				A73647E119A3AB6C004C8F87 /* UIColor+BButton.h */,
+				A73647E219A3AB6C004C8F87 /* UIColor+BButton.m */,
+				A73647DE19A3AA39004C8F87 /* BButton.h */,
+				A73647DF19A3AA39004C8F87 /* BButton.m */,
+				A7E3A94519A3508A00A0BEA9 /* Ticket-Info.plist */,
+				A7E3A94619A3508A00A0BEA9 /* InfoPlist.strings */,
+				A7E3A94919A3508A00A0BEA9 /* main.m */,
+				A7E3A94B19A3508A00A0BEA9 /* Ticket-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7E3A96219A3508A00A0BEA9 /* TicketTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3A96819A3508A00A0BEA9 /* TicketTests.m */,
+				A7E3A96319A3508A00A0BEA9 /* Supporting Files */,
+			);
+			path = TicketTests;
+			sourceTree = "<group>";
+		};
+		A7E3A96319A3508A00A0BEA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3A96419A3508A00A0BEA9 /* TicketTests-Info.plist */,
+				A7E3A96519A3508A00A0BEA9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7E3A97219A350A900A0BEA9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3A97319A350B600A0BEA9 /* KQFileManager.h */,
+				A7E3A97419A350B600A0BEA9 /* KQFileManager.m */,
+				A7E3A97819A3557900A0BEA9 /* KQDBManager.h */,
+				A7E3A97919A3557900A0BEA9 /* KQDBManager.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A7E3A98019A3763600A0BEA9 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3A98119A3764200A0BEA9 /* images */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		A7E3A98119A3764200A0BEA9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A73647E719A3B049004C8F87 /* background.jpg */,
+				A7E3A98219A3765100A0BEA9 /* fav.png */,
+				A7E3A98319A3765100A0BEA9 /* new.png */,
+				A7E3A98419A3765100A0BEA9 /* incomming.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7E3A93919A3508A00A0BEA9 /* Ticket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E3A96C19A3508A00A0BEA9 /* Build configuration list for PBXNativeTarget "Ticket" */;
+			buildPhases = (
+				A7E3A93619A3508A00A0BEA9 /* Sources */,
+				A7E3A93719A3508A00A0BEA9 /* Frameworks */,
+				A7E3A93819A3508A00A0BEA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ticket;
+			productName = Ticket;
+			productReference = A7E3A93A19A3508A00A0BEA9 /* Ticket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7E3A95A19A3508A00A0BEA9 /* TicketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E3A96F19A3508A00A0BEA9 /* Build configuration list for PBXNativeTarget "TicketTests" */;
+			buildPhases = (
+				A7E3A95719A3508A00A0BEA9 /* Sources */,
+				A7E3A95819A3508A00A0BEA9 /* Frameworks */,
+				A7E3A95919A3508A00A0BEA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7E3A96119A3508A00A0BEA9 /* PBXTargetDependency */,
+			);
+			name = TicketTests;
+			productName = TicketTests;
+			productReference = A7E3A95B19A3508A00A0BEA9 /* TicketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7E3A93219A3508A00A0BEA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KQ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Khi Quay";
+				TargetAttributes = {
+					A7E3A95A19A3508A00A0BEA9 = {
+						TestTargetID = A7E3A93919A3508A00A0BEA9;
+					};
+				};
+			};
+			buildConfigurationList = A7E3A93519A3508A00A0BEA9 /* Build configuration list for PBXProject "Ticket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7E3A93119A3508A00A0BEA9;
+			productRefGroup = A7E3A93B19A3508A00A0BEA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7E3A93919A3508A00A0BEA9 /* Ticket */,
+				A7E3A95A19A3508A00A0BEA9 /* TicketTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7E3A93819A3508A00A0BEA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E3A98619A3765100A0BEA9 /* new.png in Resources */,
+				A7E3A98719A3765100A0BEA9 /* incomming.png in Resources */,
+				A73647E819A3B049004C8F87 /* background.jpg in Resources */,
+				A7E3A95619A3508A00A0BEA9 /* Images.xcassets in Resources */,
+				A7E3A94819A3508A00A0BEA9 /* InfoPlist.strings in Resources */,
+				A7E3A95119A3508A00A0BEA9 /* Main.storyboard in Resources */,
+				A7E3A98519A3765100A0BEA9 /* fav.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E3A95919A3508A00A0BEA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E3A96719A3508A00A0BEA9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7E3A93619A3508A00A0BEA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73647E619A3AB94004C8F87 /* NSString+FontAwesome.m in Sources */,
+				A73647E319A3AB6C004C8F87 /* UIColor+BButton.m in Sources */,
+				A7E3A95419A3508A00A0BEA9 /* KQViewController.m in Sources */,
+				A7E3A97A19A3557900A0BEA9 /* KQDBManager.m in Sources */,
+				A73647E019A3AA39004C8F87 /* BButton.m in Sources */,
+				A7E3A97F19A3737A00A0BEA9 /* KQIncommingFilmViewController.m in Sources */,
+				A7E3A97519A350B600A0BEA9 /* KQFileManager.m in Sources */,
+				A7E3A94E19A3508A00A0BEA9 /* KQAppDelegate.m in Sources */,
+				A7E3A94A19A3508A00A0BEA9 /* main.m in Sources */,
+				A7E3A98A19A378A800A0BEA9 /* KQAboutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E3A95719A3508A00A0BEA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E3A96919A3508A00A0BEA9 /* TicketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7E3A96119A3508A00A0BEA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7E3A93919A3508A00A0BEA9 /* Ticket */;
+			targetProxy = A7E3A96019A3508A00A0BEA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7E3A94619A3508A00A0BEA9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7E3A94719A3508A00A0BEA9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A7E3A94F19A3508A00A0BEA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7E3A95019A3508A00A0BEA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7E3A96519A3508A00A0BEA9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7E3A96619A3508A00A0BEA9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7E3A96A19A3508A00A0BEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A7E3A96B19A3508A00A0BEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7E3A96D19A3508A00A0BEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ticket/Ticket-Prefix.pch";
+				INFOPLIST_FILE = "Ticket/Ticket-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A7E3A96E19A3508A00A0BEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ticket/Ticket-Prefix.pch";
+				INFOPLIST_FILE = "Ticket/Ticket-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A7E3A97019A3508A00A0BEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ticket.app/Ticket";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ticket/Ticket-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TicketTests/TicketTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A7E3A97119A3508A00A0BEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ticket.app/Ticket";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ticket/Ticket-Prefix.pch";
+				INFOPLIST_FILE = "TicketTests/TicketTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7E3A93519A3508A00A0BEA9 /* Build configuration list for PBXProject "Ticket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E3A96A19A3508A00A0BEA9 /* Debug */,
+				A7E3A96B19A3508A00A0BEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E3A96C19A3508A00A0BEA9 /* Build configuration list for PBXNativeTarget "Ticket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E3A96D19A3508A00A0BEA9 /* Debug */,
+				A7E3A96E19A3508A00A0BEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E3A96F19A3508A00A0BEA9 /* Build configuration list for PBXNativeTarget "TicketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E3A97019A3508A00A0BEA9 /* Debug */,
+				A7E3A97119A3508A00A0BEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7E3A93219A3508A00A0BEA9 /* Project object */;
+}
