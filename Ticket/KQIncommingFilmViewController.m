@@ -7,6 +7,7 @@
 //
 
 #import "KQIncommingFilmViewController.h"
+#import "KQViewController.h"
 
 @interface KQIncommingFilmViewController ()
 
@@ -26,6 +27,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Set custom view
+    self.title = @"Phim Đang Chiếu";
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Trở về" style:UIBarButtonItemStylePlain target:self action:@selector(backToHome:)];
+    self.navigationItem.leftBarButtonItem = backButton;
+    
+    
+    // Custom BtnBack
+    [_btnBack setTitle:@"Trở về" forState:UIControlStateNormal];
+    [_btnBack setColor:[UIColor orangeColor]];
+    [self.view setBackgroundColor:[UIColor blackColor]];
+    [_tableFilm setBackgroundColor:[UIColor blackColor]];
     
     // Connect database
     NSString *databaseFileName = @"dulieuphim.sqlite";
@@ -50,11 +64,11 @@
     
 }
 
-- (int) numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (int) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [tenPhim count];
 }
 
@@ -79,14 +93,32 @@
 
 #pragma mark -  Delegate Table Film
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[tenPhim objectAtIndex:indexPath.row] message:[noiDung objectAtIndex:indexPath.row] delegate:self cancelButtonTitle:@"Đồng ý" otherButtonTitles:@"Chi tiết", nil];
-    [alertView show];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"thongTinPhim"]) {
+        NSIndexPath *indexPath = [self.tableFilm indexPathForSelectedRow];
+        KQDFilmDetailsViewController *destViewController = segue.destinationViewController;
+        destViewController.idPhim = indexPath.row;
+        destViewController.tenPhim = [tenPhim objectAtIndex:indexPath.row];
+        destViewController.anhBia = [anhBia objectAtIndex:indexPath.row];
+        destViewController.theLoai = [theLoai objectAtIndex:indexPath.row];
+        destViewController.noiDung = [noiDung objectAtIndex:indexPath.row];
+        destViewController.doDai = [doDai objectAtIndex:indexPath.row];
+        destViewController.codePhim = [idPhim objectAtIndex:indexPath.row];
+    }
+}
+
+- (void)backToHome:(id)sender {
+    KQViewController *viewController = [[KQViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 /*

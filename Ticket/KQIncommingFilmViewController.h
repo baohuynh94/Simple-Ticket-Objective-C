@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "KQFileManager.h"
 #import "KQDBManager.h"
+#import "KQDFilmDetailsViewController.h"
 
 @interface KQIncommingFilmViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     UITableView *table_View;
@@ -19,8 +20,12 @@
     NSMutableArray *noiDung;
     NSMutableArray *doDai;
     NSMutableArray *idPhim;
+    NSMutableArray *codePhim;
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *tableFilm;
+
+// 2 buttons
+@property (nonatomic, retain) IBOutlet BButton *btnBack;
 
 @end

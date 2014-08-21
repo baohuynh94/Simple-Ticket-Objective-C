@@ -8,15 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "BButton.h"
+#import "KQDBManager.h"
+#import "KQFileManager.h"
+#import "BButton.h"
 
 @interface KQAboutViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
-    NSMutableArray *appInfo;
-    NSMutableArray *phoneInfo;
-    NSMutableArray *appInfoTitle;
-    NSMutableArray *phoneInfoTitle;
+    NSArray *tenRap;
+    NSArray *diaChi;
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *tableInfo;
 @property (strong, nonatomic) IBOutlet UIImageView *bgImage;
+@property (strong, nonatomic) IBOutlet BButton *buttonCall;
+
+- (IBAction)callBtn:(id)sender;
 
 @end

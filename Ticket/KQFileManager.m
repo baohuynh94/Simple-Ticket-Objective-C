@@ -7,6 +7,7 @@
 //
 
 #import "KQFileManager.h"
+#import "ZipArchive.h"
 
 static KQFileManager *sharedInstance = nil;
 
@@ -36,6 +37,22 @@ static KQFileManager *sharedInstance = nil;
     NSString *filePath = [[NSString alloc] initWithString:[documentsPath stringByAppendingPathComponent:fileName]];
     NSLog(@"[Class KQFileManager] Set %@ to %@ successfully!", fileName, filePath);
     return filePath;
+}
+
+- (void)checkAndCopyFileInDocumentsPath {
+    NSString *rootPath = [[NSString alloc] initWithString:NSHomeDirectory()];
+    NSString *documentsPath = [[NSString alloc] initWithString:[rootPath stringByAppendingPathComponent:@"Documents"]];
+    NSString *zipFileInBundle = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"zip"];
+    fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:[documentsPath stringByAppendingPathComponent:@"dulieuphim.sqlite"]]) {
+        ZipArchive *zipArchive = [[ZipArchive alloc] init];
+        [zipArchive UnzipOpenFile:zipFileInBundle];
+        [zipArchive UnzipFileTo:documentsPath overWrite:YES];
+        [zipArchive UnzipCloseFile];
+    }
+    else {
+        NSLog(@"[Class KQFileManager] Database file found.");
+    }
 }
 
 + (KQFileManager *)getSharedInstance {

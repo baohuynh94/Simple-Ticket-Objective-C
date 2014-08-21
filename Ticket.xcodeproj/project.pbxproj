@@ -7,10 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A735B8E619A43DFC00BE26F1 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A735B8E519A43DFC00BE26F1 /* FontAwesome.ttf */; };
 		A73647E019A3AA39004C8F87 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A73647DF19A3AA39004C8F87 /* BButton.m */; };
 		A73647E319A3AB6C004C8F87 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A73647E219A3AB6C004C8F87 /* UIColor+BButton.m */; };
 		A73647E619A3AB94004C8F87 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = A73647E519A3AB94004C8F87 /* NSString+FontAwesome.m */; };
 		A73647E819A3B049004C8F87 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A73647E719A3B049004C8F87 /* background.jpg */; };
+		A78624E519A48B1E006938D0 /* KQDFilmDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78624E419A48B1E006938D0 /* KQDFilmDetailsViewController.m */; };
+		A79E37FA19A43F4E00824093 /* alittlethingscalledlove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37EE19A43F4E00824093 /* alittlethingscalledlove.jpg */; };
+		A79E37FB19A43F4E00824093 /* alongwaydown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37EF19A43F4E00824093 /* alongwaydown.jpg */; };
+		A79E37FC19A43F4E00824093 /* dulieuphim.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F019A43F4E00824093 /* dulieuphim.sqlite */; };
+		A79E37FD19A43F4E00824093 /* hercules.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F119A43F4E00824093 /* hercules.jpg */; };
+		A79E37FE19A43F4E00824093 /* huongcangtu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F219A43F4E00824093 /* huongcangtu.jpg */; };
+		A79E37FF19A43F4E00824093 /* limit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F319A43F4E00824093 /* limit.jpg */; };
+		A79E380019A43F4E00824093 /* linhthuydanhbo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F419A43F4E00824093 /* linhthuydanhbo2.jpg */; };
+		A79E380119A43F4E00824093 /* narutotheblue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F519A43F4E00824093 /* narutotheblue.jpg */; };
+		A79E380219A43F4E00824093 /* shedevil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F619A43F4E00824093 /* shedevil.jpg */; };
+		A79E380319A43F4E00824093 /* thorii.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F719A43F4E00824093 /* thorii.jpg */; };
+		A79E380419A43F4E00824093 /* transformer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F819A43F4E00824093 /* transformer.jpg */; };
+		A79E380519A43F4E00824093 /* xmen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79E37F919A43F4E00824093 /* xmen.jpg */; };
+		A79E381819A44CDF00824093 /* data.zip in Resources */ = {isa = PBXBuildFile; fileRef = A79E381719A44CDF00824093 /* data.zip */; };
+		A79E387619A46B5100824093 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A79E386C19A46B5100824093 /* ioapi.c */; };
+		A79E387719A46B5100824093 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = A79E386E19A46B5100824093 /* mztools.c */; };
+		A79E387819A46B5100824093 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A79E387019A46B5100824093 /* unzip.c */; };
+		A79E387919A46B5100824093 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = A79E387219A46B5100824093 /* zip.c */; };
+		A79E387A19A46B5100824093 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = A79E387519A46B5100824093 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A79E387C19A46C5900824093 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A79E387B19A46C5900824093 /* libz.1.2.5.dylib */; };
 		A7E3A93E19A3508A00A0BEA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A93D19A3508A00A0BEA9 /* Foundation.framework */; };
 		A7E3A94019A3508A00A0BEA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A93F19A3508A00A0BEA9 /* CoreGraphics.framework */; };
 		A7E3A94219A3508A00A0BEA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3A94119A3508A00A0BEA9 /* UIKit.framework */; };
@@ -47,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A735B8E519A43DFC00BE26F1 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		A73647DE19A3AA39004C8F87 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
 		A73647DF19A3AA39004C8F87 /* BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BButton.m; sourceTree = "<group>"; };
 		A73647E119A3AB6C004C8F87 /* UIColor+BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BButton.h"; sourceTree = "<group>"; };
@@ -54,6 +76,33 @@
 		A73647E419A3AB94004C8F87 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
 		A73647E519A3AB94004C8F87 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
 		A73647E719A3B049004C8F87 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		A78624E319A48B1E006938D0 /* KQDFilmDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQDFilmDetailsViewController.h; sourceTree = "<group>"; };
+		A78624E419A48B1E006938D0 /* KQDFilmDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQDFilmDetailsViewController.m; sourceTree = "<group>"; };
+		A79E37EE19A43F4E00824093 /* alittlethingscalledlove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alittlethingscalledlove.jpg; sourceTree = "<group>"; };
+		A79E37EF19A43F4E00824093 /* alongwaydown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alongwaydown.jpg; sourceTree = "<group>"; };
+		A79E37F019A43F4E00824093 /* dulieuphim.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dulieuphim.sqlite; sourceTree = "<group>"; };
+		A79E37F119A43F4E00824093 /* hercules.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hercules.jpg; sourceTree = "<group>"; };
+		A79E37F219A43F4E00824093 /* huongcangtu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huongcangtu.jpg; sourceTree = "<group>"; };
+		A79E37F319A43F4E00824093 /* limit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = limit.jpg; sourceTree = "<group>"; };
+		A79E37F419A43F4E00824093 /* linhthuydanhbo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = linhthuydanhbo2.jpg; sourceTree = "<group>"; };
+		A79E37F519A43F4E00824093 /* narutotheblue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = narutotheblue.jpg; sourceTree = "<group>"; };
+		A79E37F619A43F4E00824093 /* shedevil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shedevil.jpg; sourceTree = "<group>"; };
+		A79E37F719A43F4E00824093 /* thorii.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thorii.jpg; sourceTree = "<group>"; };
+		A79E37F819A43F4E00824093 /* transformer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transformer.jpg; sourceTree = "<group>"; };
+		A79E37F919A43F4E00824093 /* xmen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xmen.jpg; sourceTree = "<group>"; };
+		A79E381719A44CDF00824093 /* data.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = data.zip; sourceTree = "<group>"; };
+		A79E386B19A46B5100824093 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		A79E386C19A46B5100824093 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		A79E386D19A46B5100824093 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		A79E386E19A46B5100824093 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		A79E386F19A46B5100824093 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		A79E387019A46B5100824093 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		A79E387119A46B5100824093 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		A79E387219A46B5100824093 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		A79E387319A46B5100824093 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		A79E387419A46B5100824093 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		A79E387519A46B5100824093 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		A79E387B19A46C5900824093 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		A7E3A93A19A3508A00A0BEA9 /* Ticket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E3A93D19A3508A00A0BEA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A7E3A93F19A3508A00A0BEA9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79E387C19A46C5900824093 /* libz.1.2.5.dylib in Frameworks */,
 				A7E3A97C19A371C600A0BEA9 /* QuartzCore.framework in Frameworks */,
 				A7E3A97719A3553300A0BEA9 /* libsqlite3.dylib in Frameworks */,
 				A7E3A94019A3508A00A0BEA9 /* CoreGraphics.framework in Frameworks */,
@@ -114,6 +164,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A735B8E419A43DFC00BE26F1 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A735B8E519A43DFC00BE26F1 /* FontAwesome.ttf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		A79E37ED19A43F4E00824093 /* dataPhim */ = {
+			isa = PBXGroup;
+			children = (
+				A79E37EE19A43F4E00824093 /* alittlethingscalledlove.jpg */,
+				A79E37EF19A43F4E00824093 /* alongwaydown.jpg */,
+				A79E37F019A43F4E00824093 /* dulieuphim.sqlite */,
+				A79E37F119A43F4E00824093 /* hercules.jpg */,
+				A79E37F219A43F4E00824093 /* huongcangtu.jpg */,
+				A79E37F319A43F4E00824093 /* limit.jpg */,
+				A79E37F419A43F4E00824093 /* linhthuydanhbo2.jpg */,
+				A79E37F519A43F4E00824093 /* narutotheblue.jpg */,
+				A79E37F619A43F4E00824093 /* shedevil.jpg */,
+				A79E37F719A43F4E00824093 /* thorii.jpg */,
+				A79E37F819A43F4E00824093 /* transformer.jpg */,
+				A79E37F919A43F4E00824093 /* xmen.jpg */,
+			);
+			path = dataPhim;
+			sourceTree = "<group>";
+		};
+		A79E382A19A4697D00824093 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A79E386919A46B5100824093 /* ZipArchive */,
+			);
+			name = plugins;
+			sourceTree = "<group>";
+		};
+		A79E386919A46B5100824093 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				A79E386A19A46B5100824093 /* minizip */,
+				A79E387419A46B5100824093 /* ZipArchive.h */,
+				A79E387519A46B5100824093 /* ZipArchive.mm */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		A79E386A19A46B5100824093 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				A79E386B19A46B5100824093 /* crypt.h */,
+				A79E386C19A46B5100824093 /* ioapi.c */,
+				A79E386D19A46B5100824093 /* ioapi.h */,
+				A79E386E19A46B5100824093 /* mztools.c */,
+				A79E386F19A46B5100824093 /* mztools.h */,
+				A79E387019A46B5100824093 /* unzip.c */,
+				A79E387119A46B5100824093 /* unzip.h */,
+				A79E387219A46B5100824093 /* zip.c */,
+				A79E387319A46B5100824093 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
 		A7E3A93119A3508A00A0BEA9 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +247,7 @@
 		A7E3A93C19A3508A00A0BEA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A79E387B19A46C5900824093 /* libz.1.2.5.dylib */,
 				A7E3A97B19A371C600A0BEA9 /* QuartzCore.framework */,
 				A7E3A97619A3553300A0BEA9 /* libsqlite3.dylib */,
 				A7E3A93D19A3508A00A0BEA9 /* Foundation.framework */,
@@ -153,6 +265,8 @@
 				A7E3A94C19A3508A00A0BEA9 /* KQAppDelegate.h */,
 				A7E3A94D19A3508A00A0BEA9 /* KQAppDelegate.m */,
 				A7E3A94F19A3508A00A0BEA9 /* Main.storyboard */,
+				A78624E319A48B1E006938D0 /* KQDFilmDetailsViewController.h */,
+				A78624E419A48B1E006938D0 /* KQDFilmDetailsViewController.m */,
 				A7E3A95219A3508A00A0BEA9 /* KQViewController.h */,
 				A7E3A95319A3508A00A0BEA9 /* KQViewController.m */,
 				A7E3A98819A378A800A0BEA9 /* KQAboutViewController.h */,
@@ -169,6 +283,7 @@
 		A7E3A94419A3508A00A0BEA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A735B8E419A43DFC00BE26F1 /* resources */,
 				A73647E419A3AB94004C8F87 /* NSString+FontAwesome.h */,
 				A73647E519A3AB94004C8F87 /* NSString+FontAwesome.m */,
 				A73647E119A3AB6C004C8F87 /* UIColor+BButton.h */,
@@ -215,6 +330,9 @@
 		A7E3A98019A3763600A0BEA9 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				A79E382A19A4697D00824093 /* plugins */,
+				A79E381719A44CDF00824093 /* data.zip */,
+				A79E37ED19A43F4E00824093 /* dataPhim */,
 				A7E3A98119A3764200A0BEA9 /* images */,
 			);
 			name = resource;
@@ -310,11 +428,25 @@
 			files = (
 				A7E3A98619A3765100A0BEA9 /* new.png in Resources */,
 				A7E3A98719A3765100A0BEA9 /* incomming.png in Resources */,
+				A79E380119A43F4E00824093 /* narutotheblue.jpg in Resources */,
 				A73647E819A3B049004C8F87 /* background.jpg in Resources */,
+				A79E37FF19A43F4E00824093 /* limit.jpg in Resources */,
+				A79E37FE19A43F4E00824093 /* huongcangtu.jpg in Resources */,
+				A79E380319A43F4E00824093 /* thorii.jpg in Resources */,
+				A735B8E619A43DFC00BE26F1 /* FontAwesome.ttf in Resources */,
 				A7E3A95619A3508A00A0BEA9 /* Images.xcassets in Resources */,
+				A79E380019A43F4E00824093 /* linhthuydanhbo2.jpg in Resources */,
 				A7E3A94819A3508A00A0BEA9 /* InfoPlist.strings in Resources */,
+				A79E380519A43F4E00824093 /* xmen.jpg in Resources */,
+				A79E37FD19A43F4E00824093 /* hercules.jpg in Resources */,
 				A7E3A95119A3508A00A0BEA9 /* Main.storyboard in Resources */,
+				A79E37FB19A43F4E00824093 /* alongwaydown.jpg in Resources */,
+				A79E380219A43F4E00824093 /* shedevil.jpg in Resources */,
+				A79E380419A43F4E00824093 /* transformer.jpg in Resources */,
+				A79E381819A44CDF00824093 /* data.zip in Resources */,
+				A79E37FC19A43F4E00824093 /* dulieuphim.sqlite in Resources */,
 				A7E3A98519A3765100A0BEA9 /* fav.png in Resources */,
+				A79E37FA19A43F4E00824093 /* alittlethingscalledlove.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,12 +467,18 @@
 			files = (
 				A73647E619A3AB94004C8F87 /* NSString+FontAwesome.m in Sources */,
 				A73647E319A3AB6C004C8F87 /* UIColor+BButton.m in Sources */,
+				A79E387719A46B5100824093 /* mztools.c in Sources */,
 				A7E3A95419A3508A00A0BEA9 /* KQViewController.m in Sources */,
+				A79E387A19A46B5100824093 /* ZipArchive.mm in Sources */,
+				A79E387819A46B5100824093 /* unzip.c in Sources */,
+				A78624E519A48B1E006938D0 /* KQDFilmDetailsViewController.m in Sources */,
 				A7E3A97A19A3557900A0BEA9 /* KQDBManager.m in Sources */,
 				A73647E019A3AA39004C8F87 /* BButton.m in Sources */,
 				A7E3A97F19A3737A00A0BEA9 /* KQIncommingFilmViewController.m in Sources */,
 				A7E3A97519A350B600A0BEA9 /* KQFileManager.m in Sources */,
 				A7E3A94E19A3508A00A0BEA9 /* KQAppDelegate.m in Sources */,
+				A79E387619A46B5100824093 /* ioapi.c in Sources */,
+				A79E387919A46B5100824093 /* zip.c in Sources */,
 				A7E3A94A19A3508A00A0BEA9 /* main.m in Sources */,
 				A7E3A98A19A378A800A0BEA9 /* KQAboutViewController.m in Sources */,
 			);

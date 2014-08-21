@@ -13,7 +13,7 @@
 @end
 
 @implementation KQAboutViewController
-@synthesize tableInfo, bgImage;
+@synthesize tableInfo, bgImage, buttonCall;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,33 +28,24 @@
 {
     [super viewDidLoad];
     
-    // Set image data
-    [bgImage setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    // Custom button
+    [buttonCall setTitle:@"Gọi Đặt Vé" forState:UIControlStateNormal];
+    [buttonCall setColor:[UIColor grayColor]];
     
-    // Set data for arrays
-    appInfo = [[NSMutableArray alloc] init];
-    phoneInfo = [[NSMutableArray alloc] init];
-    appInfoTitle = [[NSMutableArray alloc] init];
-    phoneInfoTitle = [[NSMutableArray alloc] init];
+    // Connect to db
+    [[KQDBManager getSharedInstance] connectDatabaseWithName:[[KQFileManager getSharedInstance] getFullPathInDocumentForFile:@"dulieuphim.sqlite"]];
     
-    // App information
-    NSString *appName=[[[NSBundle mainBundle] infoDictionary]  objectForKey:@"CFBundleName"];
-    [appInfoTitle addObject:@"Tên gói ứng dụng"];
-    [appInfo addObject:appName];
-    NSString *versionString = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleVersionKey];
-    [appInfoTitle addObject:@"Phiên bản"];
-    [appInfo addObject:versionString];
+    // Get data
+    tenRap = [[NSArray alloc] initWithArray:[[KQDBManager getSharedInstance] getDataFromTable:@"RapChieu" withColumn:@"TenRap"]];
+    diaChi = [[NSArray alloc] initWithArray:[[KQDBManager getSharedInstance] getDataFromTable:@"RapChieu" withColumn:@"DiaChi"]];
     
-    // Device information
-    [phoneInfoTitle addObject:@"Tên thiết bị"];
-    [phoneInfo addObject:[[UIDevice currentDevice] name]];
-    [phoneInfoTitle addObject:@"Hệ điều hành"];
-    [phoneInfo addObject:[[UIDevice currentDevice] model]];
-    [phoneInfoTitle addObject:@"Model"];
-    [phoneInfo addObject:[[UIDevice currentDevice] localizedModel]];
+    // Close connection
+    [[KQDBManager getSharedInstance] disconnectDatabase];
     
     tableInfo.delegate = self;
     tableInfo.dataSource = self;
+    
+    [tableInfo setBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.2]];
     
 }
 
@@ -65,25 +56,15 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 1;
 }
 
-- (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == 1) {
-        return [appInfo count];
-    }
-    else {
-        return [phoneInfo count];
-    }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [tenRap count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (section == 1) {
-        return @"Thông tin phiên bản";
-    }
-    else {
-        return @"Thông tin thiết bị";
-    }
+    return @"Thông tin rạp chiếu";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -92,17 +73,30 @@
     if (cell==nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
     }
-    
-    if (indexPath.section == 1) {
-        [cell.textLabel setText:[appInfoTitle objectAtIndex:indexPath.row]];
-        [cell.detailTextLabel setText:[appInfo objectAtIndex:indexPath.row]];
+    if (indexPath.row % 2 == 0) {
+        [cell setBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5]];
+        [cell.textLabel setBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.0]];
+        [cell.detailTextLabel setBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.0]];
     }
     else {
-        [cell.textLabel setText:[phoneInfoTitle objectAtIndex:indexPath.row]];
-        [cell.detailTextLabel setText:[phoneInfo objectAtIndex:indexPath.row]];
+        [cell setBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.2]];
+        [cell.textLabel setBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.0]];
+        [cell.detailTextLabel setBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.0]];
     }
+    [cell.textLabel setText:[tenRap objectAtIndex:indexPath.row]];
+    [cell.detailTextLabel setText:[diaChi objectAtIndex:indexPath.row]];
+    
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[tenRap objectAtIndex:indexPath.row] message:[diaChi objectAtIndex:indexPath.row] delegate:self cancelButtonTitle:@"Đồng ý" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+- (IBAction)callBtn:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:113"]];
 }
 
 /*

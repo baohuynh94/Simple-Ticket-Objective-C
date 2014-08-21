@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KQDBManager.h"
 
 @interface KQFileManager : NSObject {
     NSFileManager *fileManager;
@@ -16,5 +17,6 @@
 
 - (BOOL)fileExistInDocumentsWithName: (NSString *)name;
 - (NSString *)getFullPathInDocumentForFile: (NSString *)fileName;
+- (void)checkAndCopyFileInDocumentsPath;
 
 @end

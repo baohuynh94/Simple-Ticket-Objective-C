@@ -10,7 +10,9 @@
 #import "KQIncommingFilmViewController.h"
 #import "KQAboutViewController.h"
 
-@interface KQViewController ()
+@interface KQViewController () {
+    NSTimer *timerToScroll;
+}
 
 @end
 
@@ -23,6 +25,9 @@
     
     // Settings
     float timerInterval = 6.0;
+    
+    // Check database file exist
+    [[KQFileManager getSharedInstance] checkAndCopyFileInDocumentsPath];
     
     
     // Connect to the Database with name dulieuphim.sqlite
@@ -44,24 +49,23 @@
     
     // Set scrollView for new film
     float scrollViewWidth = _scrollNewFilm.frame.size.width;
-    int numberOfFilms = [tenPhim count];
+    int numberOfFilms = (int)[tenPhim count];
     float contentSizeWidth = scrollViewWidth * numberOfFilms;
     
     // Set button for new TableView
-    [btnPhimList setTitle:@"Đặt Vé" forState:UIControlStateNormal];
+    [btnPhimList setTitle:@"Đang Chiếu" forState:UIControlStateNormal];
     [btnPhimList setColor:[UIColor orangeColor]];
     [btnPhimList setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btnAbout setTitle:@"Thông Tin" forState:UIControlStateNormal];
     [btnAbout setColor:[UIColor grayColor]];
     [btnAbout setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
-    
-    
     [_scrollNewFilm setContentSize:CGSizeMake(contentSizeWidth, 240)];
     _scrollNewFilm.pagingEnabled = YES;
     _scrollNewFilm.bounces = NO;
     _scrollNewFilm.showsHorizontalScrollIndicator = NO;
     _scrollNewFilm.showsVerticalScrollIndicator = NO;
+    [_scrollNewFilm setScrollsToTop:NO];
     
     for (int count = 0; count < numberOfFilms; count++) {
         UIImageView *imageNewFilm = [[UIImageView alloc] initWithFrame:CGRectMake(scrollViewWidth * count, 0, 320, 240)];
@@ -96,15 +100,15 @@
         [self scrollViewDidEndDecelerating:_scrollNewFilm];
         
         // Start timer
-        [NSTimer scheduledTimerWithTimeInterval:timerInterval target:self selector:@selector(startScrollNewFilm) userInfo:nil repeats:YES];
+        timerToScroll = [NSTimer scheduledTimerWithTimeInterval:timerInterval target:self selector:@selector(startScrollNewFilm) userInfo:nil repeats:YES];
     }
 }
 
 - (void)startScrollNewFilm {
     int page = _scrollNewFilm.contentOffset.x / _scrollNewFilm.frame.size.width;
-    int numberOfImages = [tenPhim count];
-    
-    if (page != (numberOfImages - 1)) {
+    int numberOfImages = (int)[tenPhim count];
+    NSLog(@"Page: %d/%d.", page, numberOfImages);
+    if (page < (numberOfImages - 1)) {
         [_scrollNewFilm setContentOffset:CGPointMake(320 * (page + 1), 0) animated:YES];
     } else {
         [_scrollNewFilm setContentOffset:CGPointMake(0, 0) animated:YES];
@@ -133,6 +137,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [timerToScroll invalidate];
+    timerToScroll = nil;
 }
 
 @end
