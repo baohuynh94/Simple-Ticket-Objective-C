@@ -49,6 +49,7 @@ static KQFileManager *sharedInstance = nil;
         [zipArchive UnzipOpenFile:zipFileInBundle];
         [zipArchive UnzipFileTo:documentsPath overWrite:YES];
         [zipArchive UnzipCloseFile];
+        NSLog(@"[Class KQFileManager] Extracted default data to Documents.");
     }
     else {
         NSLog(@"[Class KQFileManager] Database file found.");

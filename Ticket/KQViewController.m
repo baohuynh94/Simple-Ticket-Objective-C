@@ -100,6 +100,7 @@
         [self scrollViewDidEndDecelerating:_scrollNewFilm];
         
         // Start timer
+        [timerToScroll invalidate];
         timerToScroll = [NSTimer scheduledTimerWithTimeInterval:timerInterval target:self selector:@selector(startScrollNewFilm) userInfo:nil repeats:YES];
     }
 }
